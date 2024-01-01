@@ -71,13 +71,7 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  cors: [
-    process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
-    'http://localhost:3000',
-    'https://www.nytrek.dev/',
-    'https://frontend.nytrek.dev',
-    'https://www.frontend.nytrek.dev/'
-  ].filter(Boolean),
+  cors: '*',
   csrf: [process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(Boolean),
   // endpoints: [
   //   // The seed endpoint is used to populate the database with some example data
