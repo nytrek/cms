@@ -74,6 +74,7 @@ export default buildConfig({
   cors: [
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
     'http://localhost:3000',
+    'https://www.nytrek.dev/',
     'https://frontend.nytrek.dev',
     'https://www.frontend.nytrek.dev/'
   ].filter(Boolean),
