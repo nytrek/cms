@@ -75,6 +75,7 @@ export default buildConfig({
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
     'http://localhost:3000',
     'https://frontend.nytrek.dev',
+    'https://www.frontend.nytrek.dev/'
   ].filter(Boolean),
   csrf: [process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(Boolean),
   // endpoints: [
